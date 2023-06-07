@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Translator</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="Company_logo.jpg" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Translate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="input-section mb-3">
+            <div class="input-container">
+                <div class="text-input">
+                    <textarea id="source-text" placeholder="Enter text to translate..."></textarea>
+                    <button class="clear-button" id="clear-text"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="text-output">
+                    <textarea id="translated-text" readonly placeholder="Translated text"></textarea>
+                    <button class="copy-button" id="copy-text"><i class="far fa-copy"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="input-section" id="document-section">
+            <label for="document-input" class="document-label">
+                <i class="fas fa-file-upload"></i> Choose a Document
+            </label>
+            <input type="file" id="document-input" accept=".doc,.docx">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

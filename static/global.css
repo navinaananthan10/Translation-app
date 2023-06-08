@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+:root {
+  /* fonts */
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --font-size-7xl: 26px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkslategray-100: #3c486b;
+  --color-darkslategray-200: rgba(60, 72, 107, 0.77);
+  --color-gainsboro: rgba(217, 217, 217, 0.45);
+
+  /* border radiuses */
+  --br-3xs: 10px;
+  --br-xl: 10px;
+}
